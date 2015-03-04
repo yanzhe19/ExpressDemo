@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+</head>
+
+<body>
+   <div class="content container">
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <p>Welcome to
+        <%= title %>, <%= name %>
+    </p>
+
+   <ul>
+       <% for(var index =0; index<4; index++) { %>
+       <li> Item <%= index %></li>
+       <% } %>
+   </ul>
+    <script src="/javascripts/jquery-1.11.2.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+   </div> 
+</body>
+
 </html>
